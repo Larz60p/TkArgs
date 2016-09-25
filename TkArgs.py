@@ -44,12 +44,15 @@ class TkArgs(object):
         return None
 
     def attributes_by_widget(self, widgetname):
+        atriblist = []
         wn = widgetname.title()
-        matches = []
-        for record in self.rec:
-            if wn in record.valid_for:
-                matches.append(record[0])
-        return matches
+        keys = self.get_keys()
+        for key in keys:
+            atribrec = getattr(self.rec.record, key)
+            if wn in atribrec.valid_for:
+                atriblist.append(key)
+        return atriblist
+
 
 if __name__ == '__main__':
     targs = TkArgs(filename='tkinterCommandArgumnts.json')
