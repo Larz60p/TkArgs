@@ -40,6 +40,7 @@ Requires: json, Record.py (https://github.com/Larz60p/Python-Record-Structure)
 
 **To get record keys**
 ```
->>> 
+>>> print('\nkeys: {}'.format(targs.get_keys()))
+>>> keys: ['text', 'insertwidth', 'pady', 'activebackground', 'foreground', 'textvariable', 'insertofftime', 'highlightcolor', 'padx', 'repeatinterval', 'underline', 'background', 'orient', 'insertborderWidth', 'selectbackground', 'selectborderWidth', 'bitmap', 'repeatdelay', 'exportselection', 'takefocus', 'font', 'activeforeground', 'yscrollcommand', 'borderWidth', 'disabledForeground', 'insertontime', 'highlightthickness', 'anchor', 'compound', 'wraplength', 'troughcolor', 'justify', 'highlightbackground', 'selectforeground', 'jump', 'setgrid', 'image', 'xscrollcommand', 'cursor', 'relief', 'insertbackground']
 ```
 
