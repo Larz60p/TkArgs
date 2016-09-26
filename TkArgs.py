@@ -30,7 +30,10 @@ class TkArgs(object):
             self.rec = Record.Record(filename)
 
     def get_keys(self):
-        return self.rec.record._asdict().keys()
+        keys = []
+        for record in self.rec:
+            keys.append(record.attrname)
+        return keys
 
     def get_rec(self, key):
         recc = getattr(self.rec.record, key)
@@ -56,9 +59,10 @@ class TkArgs(object):
 
 if __name__ == '__main__':
     targs = TkArgs(filename='tkinterCommandArgumnts.json')
+
     attrrec = targs.rec.record
 
-    print('Attributes for Button: {}'.format(targs.attributes_by_widget('Button')))
+    print('\n\nAttributes for Button: {}'.format(targs.attributes_by_widget('Button')))
 
     print('\nWidgets that use activeForeground: {}'.format(targs.widgets_by_attribute('activeForeground')))
 
