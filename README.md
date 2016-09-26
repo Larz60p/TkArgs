@@ -1,8 +1,8 @@
 # TkArgs
 ## Find widgets for arguments/arguments for widgets
 
-This program can find all attributes for any tkinter attribute.
-It can also find all widgets for a particular widget.
+This program can find all attributes for any tkinter widget.
+It can also find all widgets for a particular attribute.
 
 Requires: json, Record.py (https://github.com/Larz60p/Python-Record-Structure)
 
