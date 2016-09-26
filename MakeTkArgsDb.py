@@ -656,4 +656,4 @@ class MakeTkArgsDb:
 
 
 if __name__ == '__main__':
-    MakeCommandLineDb()
+    MakeTkArgsDb()
